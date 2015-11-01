@@ -22,5 +22,6 @@ public class TestComplexNumber{
 		System.out.println(c.add(1));
 		System.out.println(c.mul(2));
 		
+		System.out.println(100.0 / 0.0);
 	}
 }

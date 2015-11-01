@@ -44,8 +44,9 @@ public class MonsterPickupTrial{
 	
 	public int pickup(){
 		int mon = random.nextInt(this.totalMonRange);
+		int chance = (mon < this.newMonRange)? this.newMonChance : this.oldMonChance;
 		
-		return (mon / this.newMonChance);
+		return (mon / chance);
 	}
 /*	
 	public double[] trial(int numPickup, int numTrial){
